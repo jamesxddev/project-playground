@@ -2,7 +2,7 @@
 
 ## Context
 
-The app is a static Vite client. `npm run build` is `tsc -b && vite build`, and Vite writes `dist`. `vite.config.ts` does not set `base`, so a production build requests assets from the domain root. `src/main.tsx` mounts `BrowserRouter` with no basename. There is no test script, no workflow, and no Node version pin. `package-lock.json` is the lockfile. Vite 8.3.5 requires Node `^20.19.0 || >=22.12.0`, and `@types/node` is already `24.19.2`. `origin` is `james-datacom/project-react`. See proposal.md for why this is GitHub Pages, and the delta specs for the publish and hosted-site behavior.
+The app is a static Vite client. `npm run build` is `tsc -b && vite build`, and Vite writes `dist`. `vite.config.ts` does not set `base`, so a production build requests assets from the domain root. `src/main.tsx` mounts `BrowserRouter` with no basename. There is no test script, no workflow, and no Node version pin. `package-lock.json` is the lockfile. Vite 8.3.5 requires Node `^20.19.0 || >=22.12.0`, and `@types/node` is already `24.19.2`. `origin` is `jamesxddev/project-react`. See proposal.md for why this is GitHub Pages, and the delta specs for the publish and hosted-site behavior.
 
 ## Goals / Non-Goals
 
@@ -51,7 +51,7 @@ GitHub Pages has no SPA fallback. A request for `/project-react/settings` does n
 
 ### Docs and ignore rules
 
-Replace the Vite template `README.md` with the local run command (`npm install`, `npm run dev`), the local build and preview commands, what the workflow does, what a merge to `main` does, the manual Pages source setting, and the site URL `https://james-datacom.github.io/project-react/`. State that preview and the hosted site are under `/project-react/`, and that Node 24 is what CI uses.
+Replace the Vite template `README.md` with the local run command (`npm install`, `npm run dev`), the local build and preview commands, what the workflow does, what a merge to `main` does, the manual Pages source setting, and the site URL `https://jamesxddev.github.io/project-react/`. State that preview and the hosted site are under `/project-react/`, and that Node 24 is what CI uses.
 
 Add `.env` to `.gitignore`. `node_modules`, `dist`, and `*.local` are already ignored, and `*.local` covers `.env.local`. Do not add `build/`.
 
@@ -67,7 +67,7 @@ Add `.env` to `.gitignore`. `node_modules`, `dist`, and `*.local` are already ig
 
 1. Add the workflow, the Vite base and `404.html` copy, the router basename, the `.env` ignore rule, and the README.
 2. In the repository on GitHub, set Settings → Pages → Build and deployment → Source to GitHub Actions. That setting is not stored in the repo. The first deploy creates the `github-pages` environment.
-3. Push to `main`, or run the workflow manually. A successful deploy publishes `https://james-datacom.github.io/project-react/`.
+3. Push to `main`, or run the workflow manually. A successful deploy publishes `https://jamesxddev.github.io/project-react/`.
 4. To roll back, revert the commit on `main` or re-run the workflow from an earlier commit. A failed build does not replace the current site. The first deploy has no previous site to keep.
 
 ## Open Questions

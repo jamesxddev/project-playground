@@ -7,10 +7,10 @@ Serve the built app on this repository's GitHub Pages project path so its assets
 ## ADDED Requirements
 
 ### Requirement: Host the app on the project site
-GitHub Pages SHALL serve the application at `https://james-datacom.github.io/project-react/`. The home screen SHALL render at that address.
+GitHub Pages SHALL serve the application at `https://jamesxddev.github.io/project-react/`. The home screen SHALL render at that address.
 
 #### Scenario: Open the project site
-- **WHEN** a visitor opens `https://james-datacom.github.io/project-react/`
+- **WHEN** a visitor opens `https://jamesxddev.github.io/project-react/`
 - **THEN** the application renders its home screen
 
 ### Requirement: Production assets use the project path
@@ -22,15 +22,15 @@ The production build SHALL load its scripts and styles from under `/project-reac
 - **THEN** those assets load successfully
 
 ### Requirement: Client routes survive a direct load
-Opening or refreshing a client route on the hosted site SHALL render that route in the application. The address SHALL remain a path URL under `https://james-datacom.github.io/project-react/`. The site SHALL NOT switch client routes to hash URLs.
+Opening or refreshing a client route on the hosted site SHALL render that route in the application. The address SHALL remain a path URL under `https://jamesxddev.github.io/project-react/`. The site SHALL NOT switch client routes to hash URLs.
 
 #### Scenario: Open a route directly
-- **WHEN** a visitor opens `https://james-datacom.github.io/project-react/settings`
+- **WHEN** a visitor opens `https://jamesxddev.github.io/project-react/settings`
 - **THEN** the application renders the Settings screen
-- **THEN** the address remains `https://james-datacom.github.io/project-react/settings`
+- **THEN** the address remains `https://jamesxddev.github.io/project-react/settings`
 
 #### Scenario: Refresh a route
-- **WHEN** a visitor refreshes `https://james-datacom.github.io/project-react/account`
+- **WHEN** a visitor refreshes `https://jamesxddev.github.io/project-react/account`
 - **THEN** the application renders the Account screen
 - **THEN** the address remains a path URL for that route
 

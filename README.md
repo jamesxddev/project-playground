@@ -2,7 +2,7 @@
 
 Static React application. GitHub Actions builds it, and GitHub Pages hosts the result. There is no backend.
 
-The hosted site is [https://james-datacom.github.io/project-react/](https://james-datacom.github.io/project-react/).
+The hosted site is [https://jamesxddev.github.io/project-react/](https://jamesxddev.github.io/project-react/).
 
 CI uses Node.js 24. Vite 8 accepts that version, and it matches the `@types/node` dependency in this repo.
 

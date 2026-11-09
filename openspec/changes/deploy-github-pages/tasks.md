@@ -15,7 +15,7 @@
 ## 3. Docs and ignore rules
 
 - [x] 3.1 Add `.env` to `.gitignore` without adding `build/`, and verify `git check-ignore` matches `.env`, `.env.local`, `node_modules`, and `dist`
-- [x] 3.2 Replace the Vite template `README.md` with local run (`npm install`, `npm run dev`), local build and preview, what the workflow does, what a merge to `main` does, Node 24, the manual Pages source setting, and `https://james-datacom.github.io/project-react/`, and verify those points are in the README
+- [x] 3.2 Replace the Vite template `README.md` with local run (`npm install`, `npm run dev`), local build and preview, what the workflow does, what a merge to `main` does, Node 24, the manual Pages source setting, and `https://jamesxddev.github.io/project-react/`, and verify those points are in the README
 
 ## 4. Local check
 
